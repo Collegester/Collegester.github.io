@@ -8,7 +8,6 @@ Welcome to Collegester, your dedicated college search engine designed to simplif
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -20,6 +19,8 @@ Collegester is a project initiated by a team of ambitious 11th-grade students to
 - **Authentication:** Secure access to Collegester through Firebase authentication.
 - **AI Assistant:** Integration of Algomo for an AI assistant, enhancing user experience.
 - **Centralized Platform:** All-encompassing data organization for universities and scholarships.
+- **Liking Universities and Colleges:** Collegester provides the ability to like your favorite educational institutions.
+- **Filteration and search systems:** The ability to find compatible universities easily.
 
 ## Getting Started
 
@@ -32,24 +33,14 @@ To get started with Collegester, follow these steps:
 
 The project structure is organized as follows:
 
-- `/src`: Contains the source code for Collegester.
-- `/docs`: Documentation files, including the project presentation and reports.
+- `/images`: Contains the images used in collegester.
+- the source code isn't in a specific folder.
 
 ## Technologies Used
 
 - **Firebase:** For secure authentication.
-- **Algomo:** Powering the AI assistant.
 - **HTML, CSS, JavaScript:** Front-end development.
 
-## Contributing
-
-We welcome contributions from the community. To contribute to Collegester, follow these steps:
-
-1. **Fork the repository.**
-2. **Create a new branch for your feature:** `git checkout -b feature-name`
-3. **Make your changes and commit them:** `git commit -m 'Description of your changes'`
-4. **Push your changes to the branch:** `git push origin feature-name`
-5. **Submit a pull request.**
 
 ## License
 
