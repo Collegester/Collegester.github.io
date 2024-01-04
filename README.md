@@ -24,14 +24,14 @@ Collegester is a project initiated by a team of ambitious 11th-grade students to
 
 ## Getting Started
 
-Collegester can be run using (VsCode)[https://code.visualstudio.com/download] To get started with Collegester, follow these steps:
+Collegester can be run using [VsCode](https://code.visualstudio.com/download) To get started with Collegester, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/collegester.git
 
 2. **Run the project using Liveserver:**
-   if you don't have liveserver you can download it (here)[https://owlhowto.com/how-to-setup-live-server-on-visual-studio-code/]
+   if you don't have liveserver you can download it [here](https://owlhowto.com/how-to-setup-live-server-on-visual-studio-code/)
    
 ## Project Structure
 
