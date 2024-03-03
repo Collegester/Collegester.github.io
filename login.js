@@ -55,12 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (Username === "Maria" && Password === "123") {
       setFormMessage(loginForm, "success", "You're logged in!");
       sleep(500).then(() => {
-        window.location.replace("home.html");
+        window.location.replace("index.html");
       });
     } else if (Username === "Admin" && Password === "100") {
       setFormMessage(loginForm, "success", "You're logged in!");
       sleep(500).then(() => {
-        window.location.replace("home.html");
+        window.location.replace("index.html");
       });
     } else {
       setFormMessage(
