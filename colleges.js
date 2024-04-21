@@ -40,7 +40,7 @@ const colleges = [
     location: "Dubai",
     website: "https://www.gemsjc.com/",
     logo: "images/jumaira-logo.png",
-    img: "images/jojo.png",
+    img: "images/jojo.jpg",
     publicPrivate: "private",
     more: "description/JUMAIRA.html",
   },
