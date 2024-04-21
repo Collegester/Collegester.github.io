@@ -1,5 +1,63 @@
-/*hero section elements (text and picture) */
+body {
+  overflow-x: hidden;
+  display: grid;
+}
 
+.topnav {
+  overflow: hidden;
+}
+
+.topnav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav ul li {
+  float: left !important;
+  margin-right: 30px;
+  color: #f2f2f2;
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+/*a hover effect for the links in a navbar*/
+.topnav ul li:hover {
+  color: black;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  flex: 1;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.topnav .links {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/*hiding the bars button*/
+#link {
+  display: none;
+} /*hero section elements (text and picture) */
 
 #herosectionimgcolleges {
   position: absolute;
@@ -14,8 +72,8 @@
   padding: 0px 0px 30px 125px;
   color: rgba(0, 0, 0, 0.495);
   font-size: 45px;
+  margin-top: 150px;
 }
-
 
 /*Search bar and search box*/
 .searchbox {
@@ -44,16 +102,15 @@ input {
 }
 
 /*college cards*/
-.firstsection{
+.firstsection {
   z-index: 1;
   background-color: #dedddd41;
-padding: 80px 0px 0px 40px;
+  padding: 80px 0px 0px 40px;
   text-align: center;
-  margin: 10px 0px 0px 0px ;
-  font-family: 'Mouse Memoirs', sans-serif;
-  font-family: 'Raleway', sans-serif;
+  margin: 10px 0px 0px 0px;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-
 
 #accordion {
   z-index: 1;
@@ -63,12 +120,12 @@ padding: 80px 0px 0px 40px;
   position: absolute;
   right: 0px;
   padding-top: 40px;
-  padding-bottom:40px;
-  width:100%; 
+  padding-bottom: 40px;
+  width: 100%;
   text-align: center;
-  margin: 0px 0px 0px 0px  ;
-  font-family: 'Mouse Memoirs', sans-serif;
-  font-family: 'Raleway', sans-serif;
+  margin: 0px 0px 0px 0px;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .card {
@@ -164,45 +221,123 @@ padding: 80px 0px 0px 40px;
 /*divider*/
 .divider {
   padding: 20px;
-  margin-top:-30px;
-  background-color:rgb(194, 193, 193) ;
+  margin-top: -30px;
+  background-color: rgb(194, 193, 193);
   z-index: 3;
 }
 /*filters*/
 
-.filters{
-  position: absolute; left: 0px;
-  align-items:left;
+.filters {
+  position: absolute;
+  left: 0px;
+  align-items: left;
   z-index: 2;
   text-align: left;
   padding: 0px 0px 30px 40px;
-  margin: 0px 0px 0px -40px ;
-  font-family: 'Mouse Memoirs', sans-serif;
-  font-family: 'Raleway', sans-serif;
+  margin: 0px 0px 0px -40px;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: large;
-
 }
 
-.filterContents{
-  margin:0px 0px 0px 10px;
+.filterContents {
+  margin: 0px 0px 0px 10px;
   padding-top: 30px;
 }
 
-.filterContents label{
+.filterContents label {
   margin: 5px 0px 0px 40px;
 }
-.checkbox{
-  position: absolute; left: -190px;
+.checkbox {
+  position: absolute;
+  left: -190px;
   margin: 10px;
 }
 
 .checkbox-disabled {
   background-color: #a0a0a0;
-  color:#7e7e7e;
+  color: #7e7e7e;
   font: inherit;
-  position: absolute; left: -190px;
+  position: absolute;
+  left: -190px;
   margin: 10px;
   border: 0.15em solid currentColor;
   border-radius: 0.15em;
-  
+}
+
+/*footerr*/
+
+.footer {
+  z-index: 3;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10%;
+}
+
+.footer h5,
+h6,
+.paragraph,
+.footerlink {
+  color: #ffffffde;
+  overflow: none;
+}
+
+.footerlink a {
+  text-decoration: none;
+  font-size: 20px;
+  overflow: none;
+}
+.footerlink:hover {
+  color: #ffffffde;
+}
+
+.footer h5 {
+  margin: 0px 0px 50px 0px;
+}
+
+.footerhead {
+  background-color: #454545;
+  margin-bottom: 0px;
+  padding: 50px 0px 40px 90px;
+}
+
+.footerfooter {
+  background-color: #3c3c3c;
+  padding: 20px 0px 10px 0px;
+}
+
+.footer .heading {
+  font-weight: 700;
+}
+
+.footer .paragraph {
+  width: 450px;
+  height: 50px;
+  font-size: small;
+}
+
+.secondcolumn {
+  margin: -140px 0px 0px 570px;
+  align-items: left;
+}
+
+.thirdcolumn {
+  margin: -235px 0px 0px 770px;
+}
+
+.fourthcolumn {
+  margin: -190px 0px 0px 920px;
+}
+
+.secondcolumn a {
+  margin-top: 20px;
+}
+
+.secondcolumn h1 {
+  margin-bottom: 40px;
+}
+
+.footerfooter p {
+  text-align: center;
+  color: #ffffff;
 }

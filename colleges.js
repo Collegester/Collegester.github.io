@@ -1,78 +1,30 @@
-/*\
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card");
-  for (let i = 0; i < cards.length; i++) {
-    cards[i].style.display = "block";
-  }
-});
-
-function filter() {
-  const cards = document.querySelectorAll(".card");
-
-  const DubaiCheckbox = document.getElementById("Dubai");
-  const SharjahCheckbox = document.getElementById("Sharjah");
-  const AbuDhabiCheckbox = document.getElementById("Abu Dhabi");
-  const RasAlKhaimaCheckbox = document.getElementById("Ras Al Khaima");
-  const AjmanCheckbox = document.getElementById("Ajman");
-  const PrivateCheckbox = document.getElementById("Private");
-  const PublicCheckbox = document.getElementById("Public");
-
-  for (let i = 0; i < cards.length; i++) {
-    {
-      console.log(colleges[i].location);
-
-      const Location = colleges[i].location;
-      const publicPrivate = colleges[i].publicPrivate;
-
-      if (DubaiCheckbox.checked && Location.includes("Dubai")) {
-        cards[i].style.display = "block";
-      } else if (SharjahCheckbox.checked && Location.includes("Sharjah")) {
-        cards[i].style.display = "block";
-      } else if (AbuDhabiCheckbox.checked && Location.includes("Abu Dhabi")) {
-        cards[i].style.display = "block";
-      } else if (
-        RasAlKhaimaCheckbox.checked &&
-        Location.includes("Ras al khaimah")
-      ) {
-        cards[i].style.display = "block";
-      } else if (AjmanCheckbox.checked && Location.includes("Ajman")) {
-        cards[i].style.display = "block";
-      } else if (PublicCheckbox.checked && publicPrivate.includes("Public")) {
-        cards[i].style.display = "block";
-      } else if (PrivateCheckbox.checked && publicPrivate.includes("Private")) {
-        cards[i].style.display = "block";
-      } else {
-        cards[i].style.display = "none";
-      }
-    }
-  }
-}*/
-// data for colleges
-/*const colleges = [
+const colleges = [
   {
-    name: "American University in Emirates",
+    name: "American University In The Emirates",
     location: "Dubai",
-    publicPrivate: "private",
     website: "https://aue.ae/",
-    logo: "images/AUElogo.png",
     img: "images/AUEcampus.jpg",
-  },
-
-  {
-    name: "American University in Sharjah",
-    location: "Sharjah",
+    logo: "images/AUElogo.png",
     publicPrivate: "private",
+    more: "description/AUE.html",
+  },
+  {
+    name: "American University of Sharjah",
+    location: "Sharjah",
     website: "https://www.aus.edu/",
     logo: "images/AUSlogo.png",
     img: "images/AUScampus.jfif",
+    publicPrivate: "private",
+    more: "description/AUS.html",
   },
   {
-    name: "RIT",
+    name: "Rochester Institute of Technology of Dubai",
     location: "Dubai",
-    publicPrivate: "private",
     website: "https://www.rit.edu/dubai/",
     logo: "images/RITlogo.png",
     img: "images/RITcampus.jpg",
+    publicPrivate: "private",
+    more: "description/RIT.html",
   },
   {
     name: "ALDAR",
@@ -81,71 +33,79 @@ function filter() {
     website: "https://www.aldar.com/en",
     logo: "images/aldar-logo.png",
     img: "images/aldarcampus.png",
+    more: "description/ALDAR.html",
   },
   {
     name: "jumaira",
     location: "Dubai",
-    publicPrivate: "private",
     website: "https://www.gemsjc.com/",
     logo: "images/jumaira-logo.png",
     img: "images/Jumairacampus.png",
+    publicPrivate: "private",
+    more: "description/JUMAIRA.html",
   },
   {
     name: "American University in Dubai",
     location: "Dubai",
-    publicPrivate: "private",
     website: "https://www.aud.edu/",
     logo: "images/AUDlogo.png",
     img: "images/AUDcampus.jfif",
+    publicPrivate: "private",
+    more: "description/AUD.html",
   },
   {
-    name: "UAEU",
+    name: "United Arab Emirates University",
     location: "Abu Dhabi",
     publicPrivate: "public",
     website: "https://www.uaeu.ac.ae/en/",
     logo: "images/UAEUlogo.png",
     img: "images/UAEUcampus.jpg",
+    more: "description/UAEU.html",
   },
   {
     name: "Khalifa University",
     location: "Abu Dhabi",
-    publicPrivate: "public",
     website: "https://www.ku.ac.ae/",
     logo: "images/Khalifa-logo.jfif",
     img: "images/khalifacampus.jpg",
+    publicPrivate: "public",
+    more: "description/KHALIFA.html",
   },
   {
-    name: "University of Sharjah",
+    name: "University of sharjah",
     location: "Sharjah",
-    publicPrivate: "private",
     website: "https://www.sharjah.ac.ae/en/Pages/default.aspx",
     logo: "images/sharjah-uni-logo.png",
     img: "images/sharjahcampus.jpg",
+    publicPrivate: "private",
+    more: "description/SHARJAH.html",
   },
   {
-    name: "BUiD",
+    name: "British University in Dubai",
     location: "Dubai",
-    publicPrivate: "private",
     website: "https://www.buid.ac.ae/",
     logo: "images/BUiDlogo.png",
     img: "images/BUiDcampus.jpg",
+    publicPrivate: "private",
+    more: "description/BUID.html",
   },
-
   {
-    name: "Zayed University",
+    name: "zayed university",
     location: "Dubai",
     publicPrivate: "public",
     website: "https://www.zu.ac.ae/main/en/index",
     logo: "images/zayedunilogo.jfif",
     img: "images/zayedcampus.jpg",
+    more: "description/ZAYED.html",
   },
   {
     name: "Gulf Medical University",
     location: "Ajman",
-    publicPrivate: "private",
     website: "https://gmu.ac.ae/",
     logo: "images/gulf-med-uni-logo.jfif",
     img: "images/gmucampus.jpg",
+    publicPrivate: "private",
+    more: "description/GMU.html",
   },
   {
     name: "Higher Colleges of Technology",
@@ -154,303 +114,388 @@ function filter() {
     website: "https://hct.ac.ae/en/",
     logo: "images/Higher_Colleges_of_Technology_logo.png",
     img: "images/HCTcampus.jpg",
+    more: "description/HCT.html",
   },
   {
     name: "Abu Dhabi University",
     location: "Abu Dhabi",
-    publicPrivate: "private",
     website: "https://www.adu.ac.ae/en/home",
     logo: "images/Abu_Dhabi_Universityl-ogo.png",
     img: "images/AbuDhabicampus.jpg",
+    publicPrivate: "private",
+    more: "description/ABUDHABI.html",
   },
   {
-    name: "AU Ras Al Khaimah",
-    location: "Ras Al Khaima",
-    publicPrivate: "public",
+    name: "American University of Ras al Khaimah",
+    location: "RasAlKhaima",
     website:
       "https://join.aurak.ac.ae/?utm_source=adwords&utm_medium=cpc&utm_campaign=UAE&utm_content=%7C2%7C512140942933%7C_2%7C%7C3%7C%7C_3%7C&utm_term=%7C4%7Ckwd-301310586949%7C_4%7Caurak512140942933%7C_2%7C%7C3%7C%7C_3%7C&utm&gclid=Cj0KCQiA1sucBhDgARIsAFoytUv-_NCOVFXmc8GzXgKvPGJ4jVZZCHh0NiKH1h9-jOO9wGbUsouINUUaAtspEALw_wcB",
     logo: "images/AURAKlogo.png",
     img: "images/AURAKcampus.png",
-  },
-  {
-    name: "higher colleges of technology",
-    location: "Sharjah",
-  },
-];
-*/
-
-const colleges = [
-  {
-    name: "American University In The Emirates",
-    location: "Dubai",
-  },
-  {
-    name: "American University of Sharjah",
-    location: "Sharjah",
-  },
-  {
-    name: "Rochester Institute of Technology of Dubai",
-    location: "Dubai",
-  },
-  {
-    name: "ALDAR",
-    location: "Dubai",
-  },
-  {
-    name: "jumaira",
-    location: "Dubai",
-  },
-  {
-    name: "American University in Dubai",
-    location: "Dubai",
-  },
-  {
-    name: "United Arab Emirates University",
-    location: "Abu Dhabi",
-  },
-  {
-    name: "Khalifa University",
-    location: "Abu Dhabi",
-  },
-  {
-    name: "University of sharjah",
-    location: "Sharjah",
-  },
-  {
-    name: "British University in Dubai",
-    location: "Dubai",
-  },
-  {
-    name: "zayed university",
-    location: "Dubai",
-  },
-  {
-    name: "Gulf Medical University",
-    location: "Ajman",
-  },
-  {
-    name: "Higher Colleges of Technology",
-    location: "Abu Dhabi",
-  },
-  {
-    name: "Abu Dhabi University",
-    location: "Abu Dhabi",
-  },
-  {
-    name: "American University of Ras al Khaimah",
-    location: "Ras al Khaimah",
+    publicPrivate: "private",
+    more: "description/RASALKHAIMAH.html",
   },
   {
     name: "Abu Dhabi Polytechnic",
     location: "Abu Dhabi",
-  },
-  {
-    name: "Abu Dhabi School of Management",
-    location: "Abu Dhabi",
+    website: "https://adpoly.ac.ae/",
+    img: "images/34B.jpg",
+    logo: "images/34A.png",
+    publicPrivate: "private",
+    more: "description/POLYTECHNIC.html",
   },
   {
     name: "Ajman University",
     location: "Ajman",
+    website: "https://www.ajman.ac.ae/en/",
+    img: "images/17B.jpg",
+    logo: "images/17A.jpg",
+    publicPrivate: "private",
+    more: "description/AJMAN.html",
   },
   {
     name: "Al Ain University",
     location: "Al Ain",
+    website: "https://www.aau.ac.ae/en/",
+    img: "images/18B.jpg",
+    logo: "images/18A.png",
+    publicPrivate: "private",
+    more: "description/ALAIN.html",
   },
-  {
-    name: "Al Dar University College (On Probation)",
-    location: "Dubai",
-  },
+
   {
     name: "Al Falah University",
     location: "Dubai",
+    website: "https://alfalahuniversity.edu.in/",
+    img: "images/19B.jpg",
+    logo: "images/19A.png",
+    publicPrivate: "private",
+    more: "description/ALFALAH.html",
   },
   {
     name: "Al Qasimia University",
     location: "Sharjah",
+    website: "https://www.alqasimia.ac.ae/en/Pages/default.aspx",
+    img: "images/20B.jpg",
+    logo: "images/20A.jpg",
+    publicPrivate: "private",
+    more: "description/ALQASIMIA.html",
   },
   {
     name: "Al Wasl University",
     location: "Dubai",
+    website: "https://alwasl.ac.ae/",
+    img: "images/21B.jpg",
+    logo: "images/21A.jpg",
+    publicPrivate: "private",
+    more: "description/ALWASl.html",
   },
   {
     name: "Amity University Dubai",
     location: "Dubai",
+    website:
+      "https://amityuniversity.ae/intake-2024/?source=Google&campaign=20743358547&adgroup=158363840587&keyword=amity%20university%20dubai&gad_source=1&gclid=CjwKCAjwh4-wBhB3EiwAeJsppNptzZ87vy9cuP2Is2aRvwa7CWhqHax9pAIzA19GJ0tmbpyUt4GeChoCTSYQAvD_BwE",
+    img: "images/22B.jpg",
+    logo: "images/22A.png",
+    publicPrivate: "private",
+    more: "description/AMITY.html",
   },
   {
     name: "Canadian University of Dubai",
     location: "Dubai",
+    website: "https://www.cud.ac.ae/",
+    img: "images/23B.jpg",
+    logo: "images/23A.jpg",
+    publicPrivate: "private",
+    more: "description/CUD.html",
   },
   {
     name: "City University College of Ajman",
     location: "Ajman",
+    website: "https://www.cu.ac.ae/",
+    img: "images/24B.jpg",
+    logo: "images/24A.png",
+    publicPrivate: "private",
+    more: "description/CUCA.html",
   },
   {
-    name: "Dubai Institute of Design and Innovation",
+    name: "Dubai Medical College for Girls",
     location: "Dubai",
-  },
-  {
-    name: "Dubai Medical College",
-    location: "Dubai",
+    website: "https://www.dmcg.edu/",
+    img: "images/25B.jpg",
+    logo: "images/25A.jpg",
+    publicPrivate: "private",
+    more: "description/DMC.html",
   },
   {
     name: "Dubai Pharmacy College",
     location: "Dubai",
+    website: "https://dpc.edu/research.php",
+    img: "images/26B.jpg",
+    logo: "images/26A.jpg",
+    publicPrivate: "private",
+    more: "description/DPC.html",
   },
   {
     name: "Emirates Aviation University",
     location: "Dubai",
+    website: "https://www.eau.ac.ae/en",
+    img: "images/27B.jpg",
+    logo: "images/27A.png",
+    publicPrivate: "private",
+    more: "description/EAU.html",
   },
   {
     name: "Emirates College for Advanced Education",
     location: "Abu Dhabi",
-  },
-  {
-    name: "Emirates Institute for Banking and Financial Studies",
-    location: "Dubai",
-  },
-  {
-    name: "European University College",
-    location: "Dubai",
+    website: "https://www.ecae.ac.ae/en/",
+    img: "images/28B.jpg",
+    logo: "images/28A.jpg",
+    publicPrivate: "private",
+    more: "description/ECAE.html",
   },
   {
     name: "Fatima College of Health Sciences",
     location: "Abu Dhabi",
-  },
-  {
-    name: "Higher Colleges of Technology",
-    location: "Al Ain",
+    website: "https://www.fchs.ac.ae/",
+    img: "images/31B.jpg",
+    logo: "images/31A.png",
+    publicPrivate: "private",
+    more: "description/FATIMA.html",
   },
   {
     name: "Imam Malik College for Islamic Sharia and Law",
     location: "Dubai",
+    website: "https://www.imc.gov.ae/en",
+    img: "images/32B.jpg",
+    logo: "images/32A.jpg",
+    publicPrivate: "private",
+    more: "description/IMAMMALIK.html",
   },
   {
     name: "Institute of Management Technology Dubai",
     location: "Dubai",
+    website: "https://www.imt.ac.ae/",
+    img: "images/33B.jpeg",
+    logo: "images/33A.png",
+    publicPrivate: "private",
+    more: "description/IMTD.html",
   },
   {
     name: "Islamic Azad University U.A.E. Branch",
     location: "Dubai",
-  },
-  {
-    name: "Jumeira University",
-    location: "Dubai",
+    website: "https://iau.ae/",
+    img: "images/60B.jpg",
+    logo: "images/60A.png",
+    publicPrivate: "private",
+    more: "description/ISLAMICAZAD.html",
   },
   {
     name: "Khawarizmi International College",
     location: "Abu Dhabi",
+    website: "https://www.caa.ae/Pages/Institutes/Details.aspx?GUID=2",
+    img: "images/35B.jpg",
+    logo: "images/35A.jpg",
+    publicPrivate: "private",
+    more: "description/KHAWARIZMI.html",
   },
   {
     name: "Liwa College of Technology",
     location: "Abu Dhabi",
+    website: "https://lc.ac.ae/",
+    img: "images/36B.jpg",
+    logo: "images/36A.jpg",
+    publicPrivate: "private",
+    more: "description/LIWA.html",
   },
   {
     name: "Manipal University, Dubai",
     location: "Dubai",
+    website: "https://www.manipaldubai.com/",
+    img: "images/37B.jpg",
+    logo: "images/37A.png",
+    publicPrivate: "private",
+    more: "description/MANIPAl.html",
   },
   {
     name: "Middlesex University Dubai",
     location: "Dubai",
+    website: "https://www.mdx.ac.ae/",
+    img: "images/38B.jpg",
+    logo: "images/38A.png",
+    publicPrivate: "private",
+    more: "description/MIDDLESEX.html",
   },
   {
     name: "Mohamed Bin Zayed University for Humanities",
     location: "Abu Dhabi",
+    website: "https://www.mbzuh.ac.ae/en/",
+    img: "images/39B.jpg",
+    logo: "images/39A.png",
+    publicPrivate: "private",
+    more: "description/MOHAMEDBINZAYED.html",
   },
   {
     name: "Mohamed bin Zayed University of Artificial Intelligence",
     location: "Abu Dhabi",
+    website: "https://mbzuai.ac.ae/",
+    img: "images/40B.jpg",
+    logo: "images/40A.png",
+    publicPrivate: "private",
+    more: "description/MOHAMEDBINZAYED2.html",
   },
   {
     name: "Mohammed Bin Rashid School of Government",
     location: "Dubai",
+    website: "https://www.mbrsg.ae/home",
+    img: "images/41B.jpg",
+    logo: "images/41A.jpg",
+    publicPrivate: "private",
+    more: "description/MOHAMADBINRASHID.html",
   },
   {
     name: "Mohammed Bin Rashid University of Medicine and Health Sciences",
     location: "Dubai",
+    website: "https://www.mbru.ac.ae/",
+    img: "images/42B.jpg",
+    logo: "images/42A.png",
+    publicPrivate: "private",
+    more: "description/MOHAMADBINRASHID2.html",
   },
   {
     name: "Murdoch University Dubai",
     location: "Dubai",
+    website: "https://www.murdochuniversitydubai.com/",
+    img: "images/43B.jpg",
+    logo: "images/43A.png",
+    publicPrivate: "private",
+    more: "description/MURDOCH.html",
   },
   {
     name: "New York Institute of Technology Abu Dhabi",
     location: "Abu Dhabi",
+    website: "https://www.murdochuniversitydubai.com/",
+    img: "images/44B.jpg",
+    logo: "images/44A.png",
+    publicPrivate: "private",
+    more: "description/NYIT.html",
   },
   {
     name: "New York University Abu Dhabi",
     location: "Abu Dhabi",
+    website: "https://nyuad.nyu.edu/",
+    img: "images/45B.jpg",
+    logo: "images/45A.png",
+    publicPrivate: "private",
+    more: "description/NYUAD.html",
   },
   {
     name: "Ras al-Khaimah Medical and Health Sciences University",
-    location: "Ras al-Khaimah",
-  },
-  {
-    name: "Rochester Institute of Technology, Dubai",
-    location: "Dubai",
+    location: "RasAlKhaima",
+    website: "https://www.rakmhsu.ac.ae/",
+    img: "images/46B.jpg",
+    logo: "images/46A.png",
+    publicPrivate: "private",
+    more: "description/RAKMHCU.html",
   },
   {
     name: "Shaheed Zulfikar Ali Bhutto Institute of Science and Technology Dubai",
     location: "Dubai",
+    website: "http://www.szabist.ac.ae/",
+    img: "images/47B.jpg",
+    logo: "images/47A.jpg",
+    publicPrivate: "private",
+    more: "description/SZABISTD.html",
   },
   {
     name: "Skyline University College",
     location: "Sharjah",
-  },
-  {
-    name: "The British University in Dubai",
-    location: "Dubai",
+    website: "https://www.skylineuniversity.ac.ae/",
+    img: "images/48B.jpg",
+    logo: "images/48A.jpg",
+    publicPrivate: "private",
+    more: "description/SUC.html",
   },
   {
     name: "The Emirates Academy of Hospitality Management",
     location: "Dubai",
+    website: "http://emiratesacademy.edu/",
+    img: "images/49B.jpg",
+    logo: "images/49A.jpg",
+    publicPrivate: "private",
+    more: "description/EAHC.html",
   },
   {
     name: "Umm Al Quwain University",
     location: "Umm Al Quwain",
-  },
-  {
-    name: "United Arab Emirates University",
-    location: "Al-Ain",
+    website: "http://emiratesacademy.edu/",
+    img: "images/50B.jpg",
+    logo: "images/50A.png",
+    publicPrivate: "private",
+    more: "description/UAQU.html",
   },
   {
     name: "Université Paris-Sorbonne Abou Dhabi",
     location: "Abu Dhabi",
+    website: "https://www.sorbonne.ae/en/",
+    img: "images/51B.jpg",
+    logo: "images/51A.png",
+    publicPrivate: "private",
+    more: "description/PARIS.html",
   },
   {
     name: "Université Saint-Joseph de Dubai",
     location: "Dubai",
-  },
-  {
-    name: "University College of Mother and Family Sciences",
-    location: "Ajman",
+    website: "https://www.sorbonne.ae/en/",
+    img: "images/52B.jpg",
+    logo: "images/52A.png",
+    publicPrivate: "private",
+    more: "description/PARIS2.html",
   },
   {
     name: "University of Birmingham Dubai",
     location: "Dubai",
+    website: "https://www.birmingham.ac.uk/dubai",
+    img: "images/53B.jpg",
+    logo: "images/53A.jpg",
+    publicPrivate: "private",
+    more: "description/UBD.html",
   },
   {
     name: "University of Dubai",
     location: "Dubai",
+    website: "https://www.birmingham.ac.uk/dubai",
+    img: "images/55B.jpg",
+    logo: "images/55A.jpg",
+    publicPrivate: "private",
+    more: "description/UD.html",
   },
   {
     name: "University of Fujairah",
     location: "Fujairah",
+    website: "https://www.birmingham.ac.uk/dubai",
+    img: "images/56B.jpg",
+    logo: "images/56A.jpg",
+    publicPrivate: "private",
+    more: "description/UF.html",
   },
   {
     name: "University of Science and Technology of Fujairah",
     location: "Fujairah",
-  },
-  {
-    name: "University of Sharjah",
-    location: "Sharjah",
+    website: "https://www.ustf.ac.ae/",
+    img: "images/57B.jpg",
+    logo: "images/57A.jpg",
+    publicPrivate: "private",
+    more: "description/USTF.html",
   },
   {
     name: "University of Wollongong in Dubai",
     location: "Dubai",
-  },
-  {
-    name: "Zayed University",
-    location: "Dubai",
+    website: "https://www.uowdubai.ac.ae/",
+    img: "images/58B.jpg",
+    logo: "images/58A.png",
+    publicPrivate: "private",
+    more: "description/UWD.html",
   },
 ];
 
@@ -481,13 +526,16 @@ colleges.forEach((result, idx) => {
       <h5 class="card-title">${result.name}</h5>
       <p id="location">${result.location} - ${result.publicPrivate}</p>
       
+      <a href="${result.more}" target="_blank" class="btn btn-lg btn btn-outline-primary button-primary-over">Learn more</a>
       
-      <a href="${result.website}" target="_blank" class="btn btn-lg btn btn-outline-primary button-primary-over">Visit Website</a>
     </div>
   </div>
   </div>
   
     `;
+
+  console.log(result.website);
+  // <a href="${result.website}" target="_blank" class="btn btn-lg btn btn-outline-primary button-primary-over">Visit Website</a>
 
   // Append newyly created card element to the container
   container.innerHTML += content;
@@ -713,6 +761,7 @@ function filter() {
   const AbuDhabiCheckbox = document.getElementById("Abu Dhabi");
   const RasAlKhaimaCheckbox = document.getElementById("RasAlKhaima");
   const AjmanCheckbox = document.getElementById("Ajman");
+  const FujairahCheckbox = document.getElementById("Fujairah");
   const PrivateCheckbox = document.getElementById("Private");
   const PublicCheckbox = document.getElementById("Public");
 
@@ -723,6 +772,7 @@ function filter() {
   let FAbuDhabiCheckbox;
   let FRasAlKhaimaCheckbox;
   let FAjmanCheckbox;
+  let FFujairahCheckbox;
   // Private / Public
   let FPrivateCheckbox;
   let FPublicCheckbox;
@@ -747,6 +797,9 @@ function filter() {
   if (AjmanCheckbox.checked) {
     FAjmanCheckbox = String(AjmanCheckbox.name);
   }
+  if (FujairahCheckbox.checked) {
+    FFujairahCheckbox = String(FujairahCheckbox.name);
+  }
 
   if (PrivateCheckbox.checked) {
     FPrivateCheckbox = String(PrivateCheckbox.name.toLowerCase());
@@ -761,6 +814,7 @@ function filter() {
     FAbuDhabiCheckbox,
     FRasAlKhaimaCheckbox,
     FAjmanCheckbox,
+    FFujairahCheckbox,
   ];
   const PrPubarr = [FPrivateCheckbox, FPublicCheckbox];
 
@@ -775,7 +829,8 @@ function filter() {
           SharjahCheckbox.checked ||
           AbuDhabiCheckbox.checked ||
           RasAlKhaimaCheckbox.checked ||
-          AjmanCheckbox.checked) &&
+          AjmanCheckbox.checked ||
+          FujairahCheckbox.checked) &&
         (PublicCheckbox.checked || PrivateCheckbox.checked)
       ) {
         console.log("--------------Both Filter");
@@ -798,7 +853,8 @@ function filter() {
           SharjahCheckbox.checked ||
           AbuDhabiCheckbox.checked ||
           RasAlKhaimaCheckbox.checked ||
-          AjmanCheckbox.checked) &&
+          AjmanCheckbox.checked ||
+          FujairahCheckbox.checked) &&
         !(PublicCheckbox.checked || PrivateCheckbox.checked)
       ) {
         console.log("--------------Location filter");
@@ -822,7 +878,8 @@ function filter() {
           SharjahCheckbox.checked ||
           AbuDhabiCheckbox.checked ||
           RasAlKhaimaCheckbox.checked ||
-          AjmanCheckbox.checked
+          AjmanCheckbox.checked ||
+          FujairahCheckbox.checked
         )
       ) {
         console.log("--------------PubPrivate filter");
@@ -836,7 +893,8 @@ function filter() {
             SharjahCheckbox.checked ||
             AbuDhabiCheckbox.checked ||
             RasAlKhaimaCheckbox.checked ||
-            AjmanCheckbox.checked) &&
+            AjmanCheckbox.checked ||
+            FujairahCheckbox.checked) &&
             (PublicCheckbox.checked || PrivateCheckbox.checked)) ||
           ((PublicCheckbox.checked || PrivateCheckbox.checked) &&
             !(
@@ -844,20 +902,23 @@ function filter() {
                 SharjahCheckbox.checked ||
                 AbuDhabiCheckbox.checked ||
                 RasAlKhaimaCheckbox.checked ||
-                AjmanCheckbox.checked) &&
+                AjmanCheckbox.checked ||
+                FujairahCheckbox.checked) &&
               (PublicCheckbox.checked || PrivateCheckbox.checked)
             )) ||
           ((DubaiCheckbox.checked ||
             SharjahCheckbox.checked ||
             AbuDhabiCheckbox.checked ||
             RasAlKhaimaCheckbox.checked ||
-            AjmanCheckbox.checked) &&
+            AjmanCheckbox.checked ||
+            FujairahCheckbox.checked) &&
             !(
               (DubaiCheckbox.checked ||
                 SharjahCheckbox.checked ||
                 AbuDhabiCheckbox.checked ||
                 RasAlKhaimaCheckbox.checked ||
-                AjmanCheckbox.checked) &&
+                AjmanCheckbox.checked ||
+                FujairahCheckbox.checked) &&
               (PublicCheckbox.checked || PrivateCheckbox.checked)
             ))
         )

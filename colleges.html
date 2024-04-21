@@ -5,18 +5,9 @@
     <title>Collegester>colleges</title>
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
       <title>Collegester - Your One-Stop College Search Engine</title>
-    <link rel="stylesheet" href="non responsive/home.css" />
     <link rel="stylesheet" href="colleges.css" />
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -35,7 +26,6 @@
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap");
-
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
     </style>
   </head>
@@ -46,7 +36,7 @@
       <nav>
         <!--logo-->
         <div>
-          <a href="index.html"
+          <a href="home.html"
             ><img
               style="height: 40px; width: 270px"
               src="images/logo.jfif"
@@ -54,21 +44,16 @@
           /></a>
         </div>
         <!--navbar-->
-        <div class="nav-links">
-          <ul>
-            <li><a href="colleges.html">Colleges</a></li>
-            <li><a href="scholarships.html">Scholarships</a></li>
-            <li><a href="majors.html">Majors</a></li>
-            <li><a href="scholarships.html">Community</a></li>
-            <!--<li>
-              <button
-                class="btn btn-lg btn btn-outline-primary button-primary-override"
-                onclick="document.location='login.html'"
-              >
-                Log in or Sign up
-              </button>
-            </li>-->
-            <li><a href="login.html">My Account</a></li>
+        <div class="topnav">
+          <button onclick="togglemenu()" class="navbaricon" id="link">
+            <img src="images/navigation-bar.png" />
+          </button>
+          <ul id="menulist">
+            <li><a class="links" href="colleges.html">Colleges</a></li>
+            <li><a class="links" href="scholarships.html">Scholarships</a></li>
+            <li><a class="links" href="majors.html">Majors</a></li>
+            <li><a class="links" href="community.html">Community</a></li>
+            <li><a class="links" href="login.html">My Account</a></li>
           </ul>
         </div>
       </nav>
@@ -101,9 +86,9 @@
         <div class="divider"><br /></div>
         <div class="filters">
           <div
-            style="width: 350px; height: 3620px; background-color: #c7c5c5b2"
-          >
-            <div class="filterContents" style="  --form-control-disabled: #959495;">
+            class="hoho" >
+          <!-- > style="width: 350px; height: 360px; background-color: #c7c5c5b2" -->
+            <div class="filterContents" style="--form-control-disabled: #959495;">
               <form onsubmit="return false;">
               <p class="filter_title">Location of university:</p>
               
@@ -126,10 +111,18 @@
               <input
                 type="checkbox"
                 id="RasAlKhaima"
-                name="Ras Al Khaima"
+                name="RasAlKhaima"
                 class="checkbox"
               />
-              <label for="Ras Al Khaima">Ras Al Khaima</label><br />
+              <label for="RasAlKhaima">Ras Al Khaima</label><br />
+              <input
+                type="checkbox"
+                id="Fujairah"
+                name="Fujairah"
+                class="checkbox"
+              />
+
+              <label for="Ajman">Fujairah</label><br />
               <input
                 type="checkbox"
                 id="Ajman"
@@ -138,7 +131,6 @@
               />
 
               <label for="Ajman">Ajman</label><br />
-              
               <p class="filter_title" style="margin: 40px 0px 15px 0px ;">Institution type:</p>
               <input
                 type="checkbox"
@@ -174,8 +166,9 @@
         <div class="firstsection" id="accordion"></div>
       </div>
     </main>
-    <footer style="z-index: 4; position: absolute; top: 4200px; width: 100%">
-      <!--the footer is here -->
+          <!--the footer is here -->
+
+    <!--<footer style="z-index: 4; position: absolute; top: 4200px; width: 100%">
 
       <div class="footer">
         <div class="footerhead">
@@ -227,7 +220,7 @@
           </p>
         </div>
       </div>
-    </footer>
+    </footer>-->
     <script src="colleges.js"></script>
   </body>
 </html>
