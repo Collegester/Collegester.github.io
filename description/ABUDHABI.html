@@ -14,6 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -53,14 +54,14 @@
           <a href="home.html"
             ><img
               style="height: 40px; width: 270px"
-              src="images/logo.jfif"
+              src="/images/logo.jfif"
               alt="Collegester Logo"
           /></a>
         </div>
         <!--navbar-->
         <div class="topnav" id="menulist">
           <button onclick="togglemenu()" class="navbaricon" id="link">
-            <img src="images/navigation-bar.png" />
+            <img src="/images/navigation-bar.png" />
           </button>
           <ul>
             <li>
@@ -75,8 +76,42 @@
       </nav>
     </header>
     <main>
-      <img id="bobthefixer" src="images/bobthefixer.jpg" />
-      <h1 class="sectionheading" id="comingsoon">Coming soon...</h1>
+      <a href="/colleges.html"
+>
+<svg xmlns="http://www.w3.org/2000/svg" style="z-index: index 3;" width="50" height="50" fill="black" class="bi bi-arrow-left" viewBox="-3 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+</svg>
+      <div class="sectionheading" id="collegecontainer"></div>
     </main>
   </body>
+  <script>
+    const ABUDHABI = [
+    {
+    name: "Abu Dhabi University",
+    location: "Abu Dhabi",
+    website: "https://www.adu.ac.ae/en/home",
+    logo: "/images/Abu_Dhabi_Universityl-ogo.png",
+    img: "/images/AbuDhabicampus.jpg",
+    publicPrivate: "private",
+    more: "description/ABUDHABI.html",
+  },
+    ]
+   const container = document.getElementById("collegecontainer");
+  
+
+ABUDHABI.forEach((result, idx) => {
+  // Create card element
+  const card = document.createElement("div");
+
+  // Construct card content
+
+  const content = `
+      <img src="${result.img}" style="height:500px; width: 1500px; position: absolute; top: 0px; left: 0px; z-index: -1;  object-fit: cover;">
+
+    `;
+
+ 
+  container.innerHTML += content;
+});
+  </script>
 </html>
