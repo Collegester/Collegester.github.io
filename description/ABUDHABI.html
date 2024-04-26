@@ -14,7 +14,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -41,6 +40,78 @@
         text-align: center;
         margin-left: 120px;
         color: rgba(20, 89, 67, 0.779);
+      }
+
+      .footer {
+        z-index: 3;
+        margin-top: 950px;
+      }
+
+      .footer h5,
+      h6,
+      .paragraph,
+      .footerlink {
+        color: #ffffffde;
+      }
+
+      .footerlink a {
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .footerlink:hover {
+        color: #ffffffde;
+      }
+
+      .footer h5 {
+        margin: 0px 0px 50px 0px;
+      }
+
+      .footerhead {
+        background-color: #454545;
+        margin-bottom: 0px;
+        padding: 50px 0px 40px 90px;
+      }
+
+      .footerfooter {
+        background-color: #3c3c3c;
+        margin: -20px;
+        padding: 20px 0px 10px 0px;
+      }
+
+      .footer .heading {
+        font-weight: 700;
+      }
+
+      .footer .paragraph {
+        width: 450px;
+        height: 50px;
+        font-size: small;
+      }
+
+      .secondcolumn {
+        margin: -140px 0px 0px 570px;
+        align-items: left;
+      }
+
+      .thirdcolumn {
+        margin: -235px 0px 0px 770px;
+      }
+
+      .fourthcolumn {
+        margin: -190px 0px 0px 920px;
+      }
+
+      .secondcolumn a {
+        margin-top: 20px;
+      }
+
+      .secondcolumn h1 {
+        margin-bottom: 40px;
+      }
+
+      .footerfooter p {
+        text-align: center;
+        color: #ffffff;
       }
     </style>
   </head>
@@ -76,42 +147,110 @@
       </nav>
     </header>
     <main>
-      <a href="/colleges.html"
->
-<svg xmlns="http://www.w3.org/2000/svg" style="z-index: index 3;" width="50" height="50" fill="black" class="bi bi-arrow-left" viewBox="-3 0 16 16">
-  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-</svg>
+      <a href="/colleges.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="z-index: index 3"
+          width="50"
+          height="50"
+          fill="black"
+          class="bi bi-arrow-left"
+          viewBox="-3 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+          />
+        </svg>
+      </a>
+
       <div class="sectionheading" id="collegecontainer"></div>
     </main>
   </body>
+  <footer>
+    <!--the footer is here -->
+
+    <div class="footer">
+      <div class="footerhead">
+        <h5 class="heading">Short Brief About Us</h5>
+        <p class="paragraph">
+          Collegester is your ultimate guide to finding the best colleges and
+          majors in the UAE. Our easy-to-use search engine and comprehensive
+          database of colleges and programs help you make informed decisions
+          about your education and career. With Collegester, you can simplify
+          your college search and find the perfect fit for you.
+        </p>
+        <img />
+        <div class="secondcolumn">
+          <a><h5 style="margin-top: -10px">Website links</h5></a>
+          <a class="footerlink" href="home.html"><p>Home</p></a>
+          <a class="footerlink" href="collegs.html"><p>Colleges</p></a>
+          <a class="footerlink" href="scholarships.html"><p>Scholarships</p></a>
+          <a class="footerlink" href="majors.html"><p>Majors</p></a>
+        </div>
+        <div class="thirdcolumn">
+          <a><h5 style="margin-top: -20px">Services</h5></a>
+          <a class="footerlink" href="college.html"><p>Search</p></a>
+          <a class="footerlink" href="collegs.html"><p>links</p></a>
+          <a class="footerlink" href="scholarships.html"><p>News</p></a>
+        </div>
+        <div class="fourthcolumn">
+          <a><h5 style="margin-top: -150px">About us</h5></a>
+          <a class="footerlink" href="Maria.aldbs@gmail.com"><p>Email</p></a>
+          <a class="footerlink" href="https://www.instagram.com/mariahadialdbs/"
+            ><p>Instagram</p></a
+          >
+          <a class="footerlink" href="www.linkedin.com/in/maria-aldbs-magroon"
+            ><p>LinkedIn</p></a
+          >
+          <a class="footerlink" href="majors.html"><p>Majors</p></a>
+        </div>
+      </div>
+      <div class="footerfooter">
+        <hr
+          class="footerlink"
+          style="border-width: 1.5px; width: 85%; margin-left: 100px"
+        />
+        <p class="Copyrighted">
+          Non Copyrighted @ 2023 Collegester made by maria
+        </p>
+      </div>
+    </div>
+  </footer>
   <script>
     const ABUDHABI = [
-    {
-    name: "Abu Dhabi University",
-    location: "Abu Dhabi",
-    website: "https://www.adu.ac.ae/en/home",
-    logo: "/images/Abu_Dhabi_Universityl-ogo.png",
-    img: "/images/AbuDhabicampus.jpg",
-    publicPrivate: "private",
-    more: "description/ABUDHABI.html",
-  },
-    ]
-   const container = document.getElementById("collegecontainer");
-  
+      {
+        name: "Abu Dhabi University",
+        location: "Abu Dhabi",
+        website: "https://www.adu.ac.ae/en/home",
+        logo: "/images/Abu_Dhabi_Universityl-ogo.png",
+        img: "/images/AbuDhabicampus.jpg",
+        publicPrivate: "private",
+        more: "description/ABUDHABI.html",
+        desc: "Abu Dhabi University (ADU) is one of the leading universities in the United Arab Emirates (UAE), renowned for its commitment to academic excellence, innovation, and cultural diversity. Established in 2003, ADU has rapidly grown into a prominent institution of higher learning, offering a wide range of undergraduate and postgraduate programs across various disciplines.",
+        programs:
+          "<li>College of Arts and Sciences</li><li>College of Business </li> <li>College of Engineering</li> <li>College of Health Sciences </li><li>College of Law Academic Programs for Military College</li><br>",
+      },
+    ];
+    const container = document.getElementById("collegecontainer");
 
-ABUDHABI.forEach((result, idx) => {
-  // Create card element
-  const card = document.createElement("div");
+    ABUDHABI.forEach((result, idx) => {
+      // Create card element
+      const card = document.createElement("div");
 
-  // Construct card content
+      // Construct card content
 
-  const content = `
+      const content = `
       <img src="${result.img}" style="height:500px; width: 1500px; position: absolute; top: 0px; left: 0px; z-index: -1;  object-fit: cover;">
 
+      <h1 style="position: absolute; top: 550px; font-size:200%;">${result.name}:</h1>
+      <p style="position: absolute; top: 630px; margin-left:50px;width:45%">${result.desc}</p>
+      <p style="position: absolute; top: 800px;font-size:150%;">Programs offered:</p>
+      <ul style="position: absolute; top: 880px; margin-left:50px; width:45%">${result.programs}</ul>
+      <div style="position: absolute; top: 940px; right: 50px"><p>Visit website:</p> <a href="${result.website}">${result.website}</a></div>
     `;
 
- 
-  container.innerHTML += content;
-});
+      container.innerHTML += content;
+    });
   </script>
 </html>
